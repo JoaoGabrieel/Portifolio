@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital@1&family=Montserrat+Alternates:wght@400;500&display=swap');
+
+
+:root{
+    --cor-primaria: #313866;
+    --cor-secundaria: #504099;
+    --cor-terciaria: #FE7BE5;
+    --cor-quartaria: #974EC3;
+}
+
+*{
+    margin: 0;
+    padding:0 ;
+}
+
+
+body{
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color:var(--cor-primaria);
+    color: var(--cor-quartaria);
+   
+}
+@keyframes load{
+    to{transform: rotate(360deg);}
+}
+.pre {
+    width: 80px;
+    height: 80px;
+    background-image: url("https://ilustracode.com.br/assets/images/load.png");
+    background-position: center;
+    background-size: contain;
+    animation: load 2s infinite linear;
+}
+
+.box-load{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content{
+    display: none;
+}
+
+
+
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho_menu{
+    display: flex;
+    gap: 80px;
+
+}
+
+
+.cabecalho_menu_link{
+
+    font-family:'Montserrat Alternates', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+
+}
+
+/* &:before{
+    content: " ";
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #FE7BE5;
+    position:absolute ;
+   z-index: -1;
+    transition: .7 ease;
+
+
+
+}
+
+.cabecalho_menu_link{
+    &::before{
+        height: 100%;
+    }
+} */
+
+
+.titulo-destaque{
+    color:var(--cor-terciaria);
+}
+
+.apressentacao{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apressentacao_conteudo{
+    width: 50% ;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+
+}
+
+.apressentacao_conteudo_titulo{
+    font-size: 2.25rem;
+    font-family: 'Finlandica', sans-serif;
+   
+    
+
+}
+
+.apressentacao_conteudo_texto{
+    font-size: 1.06;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: var(--cor-terciaria)
+
+
+}
+
+.apressentacao_links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apressentacao_links_subtitulo{
+    font-family:'Montserrat Alternates', sans-serif; 
+    font-weight: 400px;
+    font-size: 1.5rem;
+
+
+
+}
+
+.apressentacao_links_link{
+/* background-color: #22D4FD;*/
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border:2px solid var(--cor-secundaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 10.5px 0;
+    text-decoration: none;
+  color:var(--cor-terciaria);
+    font-family:'Montserrat Alternates', sans-serif;
+}
+
+.apressentacao_links_link:hover{
+    background-color: var(--cor-secundaria);
+    }
+
+.apressentacao_imagem {
+    width: 50%;
+
+
+}
+
+.rodape{
+    padding: 24px;
+    color:var(--cor-terciaria);
+    background-color: var(--cor-secundaria);
+    text-align: center;
+    font-family:'Montserrat Alternates', sans-serif; 
+    font-size: 1.20rem;
+}
+
+@media (max-width: 1200px){
+
+    .cabecalho{
+        padding: 10%;
+        
+    }
+
+    .cabecalho_menu{
+        justify-content: center;
+    }
+
+
+
+    .apressentacao {
+        flex-direction: column-reverse;
+    }
+
+
+    .apressentacao_conteudo{
+        width: auto;
+    }
+    
+}
+
+
+
+
+
+
+
